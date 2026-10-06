@@ -1,0 +1,89 @@
+/* PC */
+@media (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
+  .search-container {
+    width: auto;
+  }
+
+  .search-container form {
+    width: 380px;
+  }
+}
+
+/* Tablet & mobile */
+@media (max-width: 991.98px) {
+  .header__hotline-group {
+    display: none;
+  }
+  .main-nav {
+    display: none;
+  }
+  .header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    height: auto !important;
+  }
+
+  .header__logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__logo img {
+    height: 40px;
+    width: auto;
+  }
+
+  .search-container {
+    width: 100%;
+    max-width: none;
+  }
+  .search-form {
+    width: 100%;
+  }
+
+  /* Căn lại vị trí của menu icon */
+  .menu-header__icon {
+    position: absolute;
+    top: 13px;
+    left: 31px;
+    z-index: 10;
+    fill: var(--color-one);
+    width: 30px;
+  }
+
+  /* overlay */
+  .menu-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 11;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .tour-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* mobile */
+@media (max-width: 767.98px) {
+  .tour-list {
+    grid-template-columns: 1fr;
+  }
+}

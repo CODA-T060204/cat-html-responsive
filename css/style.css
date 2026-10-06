@@ -1,0 +1,728 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 1170px;
+  max-width: calc(100% - 40px);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ====================== HEADER CHÍNH ==================== */
+.header__main {
+  margin: 0 0 5px;
+  padding: 5px 0;
+}
+
+.header__container {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  height: 60px;
+  padding: 5px 0;
+}
+
+.header__logo-container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-bottom: 5px;
+}
+
+.header__logo {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: inline-block;
+  padding: 0 10px;
+  max-height: 40px;
+}
+
+.header__logo img {
+  width: 250px;
+  max-width: 100%;
+  height: 50px;
+  display: block;
+}
+
+.search-container {
+  padding: 0 10px;
+  width: 100%;
+}
+
+.search-container form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  border: 1px solid #00a3de;
+  border-radius: 25px;
+}
+
+.search-container form input {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+  margin: 0 0 0 10px;
+}
+
+.search-container form button {
+  background-color: #0a6282;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header__hotline-group {
+  display: flex;
+  margin-left: 45px;
+}
+
+.hotline-item {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 45px;
+}
+
+.hotline-item__img {
+  width: 40px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 5px 0 0;
+}
+
+.hotline-item__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotline-item__number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff0000;
+  text-decoration: none;
+  line-height: 1.1;
+}
+
+.hotline-item__label {
+  font-size: 14px;
+  color: #000304;
+  line-height: 1.1;
+}
+
+/* ================= NAVIGATION ==================== */
+.card-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.card-list__item a {
+  white-space: nowrap;
+  text-decoration: none;
+  height: 100%;
+  font-size: 16px;
+  padding: 15px 15px;
+  color: #fff;
+}
+
+.card-list__item :hover {
+  background-color: var(--color-two);
+}
+
+.main-nav {
+  background-color: var(--color-one);
+  height: auto;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu-list {
+  display: flex;
+  align-items: stretch;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 50px;
+}
+
+/* ================== SLIDE HOME =====================*/
+.slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.slider__wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.list-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider__item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.slider__btn:hover {
+  background-color: var(--color-two);
+}
+
+.slider__btn--prev {
+  left: 15px;
+}
+
+.slider__btn--next {
+  right: 15px;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dot.active {
+  background-color: #ff6600;
+  width: 28px;
+  border-radius: 10px;
+}
+
+/* ========================= CONTENT ========================= */
+.section__product {
+  margin: 30px 0 30px;
+}
+
+.tour-section__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  color: #253d52;
+  line-height: 1.1;
+}
+
+.title-line {
+  text-align: center;
+}
+
+.tl-1,
+.tl-3 {
+  width: 80px;
+  height: 1px;
+  display: inline-block;
+  background: #eee;
+}
+
+.tl-2 {
+  display: inline-block;
+  height: 12px;
+  margin: 0 5px;
+  position: relative;
+  top: 5px;
+  width: 12px;
+  border: 1px solid #1ba0e2;
+  border-radius: 50%;
+}
+
+.des-head {
+  color: #212529;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 10px;
+}
+
+.h3-title__item-product {
+  margin-top: 10px;
+  padding: 0;
+  margin-bottom: 5px;
+  line-height: 1.15;
+  color: #222;
+  font-size: 15px;
+  font-weight: 400;
+  /* height: 40px; */
+  max-height: 2.6em;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  min-height: 35px;
+}
+
+.h3-title__item-product a {
+  color: #222;
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+.img__item-product .sale {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  padding: 3px 15px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 3px 0 0 3px;
+  text-transform: uppercase;
+  margin: 0;
+  min-height: inherit;
+  line-height: 26px;
+  display: inline-block;
+  background: #f4364f;
+  z-index: 2;
+}
+
+.img__item-product {
+  position: relative;
+  overflow: hidden;
+  height: 240px;
+}
+
+.img__item-product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.7s ease 0s;
+}
+
+.img__item-product:hover img {
+  transform: scale(1.1);
+}
+
+/* .tour-list {
+  margin-top: 30px;
+} */
+
+.tour-card {
+  /* padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-between;
+  height: 40px; */
+  height: auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Thêm bóng nhẹ cho đẹp */
+  display: flex;
+  flex-direction: column; /* Đẩy nội dung xếp từ trên xuống dưới */
+}
+
+.price-vehicle__item-product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* height: 40px;
+  margin-bottom: 5px; */
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+
+.price-vehicle__item-product .fake-price {
+  /* max-width: calc(100% - 80px);
+  flex: 0 0 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+  color: #ff0000;
+  line-height: 1.1;
+  font-weight: 500;
+  text-decoration: inherit; */
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Đẩy giá cũ xuống dưới giá mới */
+  font-size: 18px;
+  color: #ff0000;
+  line-height: 1.1;
+  font-weight: 500;
+  min-height: 35px;
+}
+
+.price-vehicle__item-product .fake-price del {
+  display: block;
+  width: 100%;
+  color: #888;
+  font-size: 14px;
+  font-weight: 700;
+  order: 2;
+}
+
+.price-vehicle__item-product .fake-price ins {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  color: #e21b1b;
+  line-height: 1.1;
+  font-weight: 500;
+  text-decoration: inherit;
+  order: 1;
+}
+
+.price-vehicle__item-product .vehicle {
+  /* max-width: 70px;
+  flex: 0 0 100%; */
+  flex: 0 0 auto;
+  width: 70px;
+}
+
+.price-vehicle__item-product .vehicle .vehicle-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.price-vehicle__item-product .vehicle .vehicle-list li {
+  /* display: inline-block; */
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.price-vehicle__item-product .vehicle .vehicle-list li img {
+  max-width: 18px;
+}
+
+.info__item-product {
+  position: relative;
+  background: #fff;
+  padding: 0 10px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  box-shadow: 0 4px 7px rgb(0 0 0 / 9%);
+}
+
+.info-time__tour {
+  padding-bottom: 20px;
+}
+
+.info-time__tour ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.info-time__tour ul li {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3px 0;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.info-time__tour ul li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* ========================================================================== */
+.tour-list {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 20px;
+}
+
+/* ============================= TOUR TRONG NƯỚC ============================= */
+.tab-head {
+  text-align: center;
+}
+.tab-head .tabs-catproduct {
+  padding: 0;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15px;
+  list-style: none outside;
+}
+
+.tab-head .tabs-catproduct li {
+  display: inline-block;
+  padding: 10px 10px;
+  font-weight: 400;
+  font-size: 17px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.tab-head .tabs-catproduct li.current {
+  color: var(--color-one);
+}
+
+.tab-head .tabs-catproduct .tab-link:hover {
+  background-color: var(--color-one);
+  color: #ffffff !important;
+}
+
+.tour-section__title::before {
+  content: "";
+  display: block;
+  height: 40px;
+  width: 100%;
+}
+
+/* ========================== HOLIDAY ========================== */
+.hl_home_tourholiday {
+  display: block;
+}
+
+.section_widgettourholiday {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  color: #fff;
+  background-color: #2d3948;
+}
+
+.section_widgettourholiday .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+  padding: 20px 0;
+}
+
+.section_widgettourholiday .row .row-one {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 40%;
+}
+
+.section_widgettourholiday .row .row-two {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 60%;
+}
+
+.boxleft_swth {
+  text-align: left;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+h5.title1__boxleft_swth {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+h2.title2__boxleft_swth {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+}
+
+.des__boxleft_swth {
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+a.link__boxleft_swth {
+  background-color: #1ba0e2;
+  border: 1px solid #1ba0e2;
+  color: #fff;
+  padding: 8px 40px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 50px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.row-two {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.boxright_swth {
+  box-shadow: 0 8px 15px rgb(0 0 0 / 15%);
+}
+
+.boxright_swth img {
+  border: 0 none;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.main-container .row {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+
+/* ============================== FOOTER ================================ */
+.footer__main {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-color: #292f32;
+  position: relative;
+  color: #e2e2e2;
+  padding: 40px 0;
+}
+
+.footer__main::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+/* 4 Cột hiển thị dạng Grid */
+.footer-widgets {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Chia đều 4 cột */
+  gap: 30px;
+  padding: 0 0;
+}
+
+/* Tiêu đề mỗi cột */
+.footer-col__title {
+  color: #e2e2e2 !important;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Cột 1: Địa chỉ & Mô tả */
+.footer-col__desc {
+  margin-bottom: 15px;
+}
+
+.footer-col__address {
+  font-style: normal; /* Bỏ in nghiêng mặc định của thẻ address */
+}
+
+.footer-col__address p {
+  margin-bottom: 6px;
+}
+
+/* Danh sách link chung (Cột 2, 3, 4) */
+.footer-col__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col__list li {
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Đường gạch ngang mờ */
+}
+
+.footer-col__list li::before {
+  content: "• ";
+  color: #ffffff;
+  margin-right: 6px;
+}
+
+.footer-col a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+  color: #1ba0e2; /* Đổi màu khi di chuột vào */
+}
+
+/* Dòng Copyright bên dưới */
+.footer-bottom {
+  background-color: #08101a;
+  padding: 15px 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-bottom__copyright {
+  font-size: 13px;
+  color: #808d9e;
+  display: block;
+}
+
+.footer-widgets {
+  position: relative;
+  z-index: 2;
+}
