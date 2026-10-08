@@ -49,3 +49,55 @@ function resetAutoSlide() {
 }
 
 startAutoSlide();
+
+const navPC = document.querySelector("#navbar__list--pc");
+const navMobile = document.querySelector("#navbar__list--mobile");
+
+if (navPC && navMobile) {
+  navMobile.innerHTML = navPC.innerHTML;
+}
+
+const backToTopBtn = document.getElementById("backToTopBtn");
+
+// 1. Kiểm tra vị trí cuộn để ẩn/hiện nút
+window.addEventListener("scroll", () => {
+  // Khi cuộn xuống quá 300px thì hiện nút, ngược lại thì ẩn
+  if (window.scrollY > 300) {
+    backToTopBtn.classList.add("show");
+  } else {
+    backToTopBtn.classList.remove("show");
+  }
+});
+
+// 2. Click vào nút để cuộn mượt lên đầu trang
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // Cuộn mượt mà thay vì giật cục
+  });
+});
+
+// ======================== Các tour du lịch ===========================
+document.querySelectorAll("[data-tabs]").forEach(function (block) {
+  var tabs = block.querySelectorAll("[data-tab]");
+  var items = block.querySelectorAll("[data-group]");
+
+  function show(group) {
+    tabs.forEach(function (t) {
+      t.classList.toggle("current", t.dataset.tab === group);
+    });
+    items.forEach(function (i) {
+      i.hidden = i.dataset.group !== group;
+    });
+  }
+
+  tabs.forEach(function (t) {
+    t.addEventListener("click", function () {
+      show(t.dataset.tab);
+    });
+  });
+
+  // lúc tải trang: chỉ hiện nhóm của tab đang có class "current"
+  var first = block.querySelector("[data-tab].current") || tabs[0];
+  if (first) show(first.dataset.tab);
+});

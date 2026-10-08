@@ -77,22 +77,12 @@
         </div>
       </div>
     </header>
-
-    <!-- Tablet/mobile header -->
-     <div class="mobile-header">
-      <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="menu-checkbox" hidden>
-     <label for="menu-checkbox"> <svg class="menu-header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg></label>
-     <!-- overlay -->
-      <label for="menu-checkbox" class="menu-overlay"></label>
-    </div>
-
-
-    <div class=""></div>
+        <!-- <div class=""></div> -->
     <nav class="main-nav">
       <div class="menu-main">
         <div class="main-container">
           <div class="menu-list">
-            <ul class="card-list">
+            <ul class="card-list" id="navbar__list--pc">
               <li class="card-list__item"><a href="/">Trang Chủ</a></li>
               <li class="card-list__item">
                 <a href="/gioi-thieu">Giới thiệu</a>
@@ -124,6 +114,65 @@
         </div>
       </div>
     </nav>
+
+    <!-- Tablet/mobile header -->
+<!-- Tablet/mobile header -->
+<div class="mobile-header">
+  <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="menu-checkbox" hidden>
+
+  <label for="menu-checkbox">
+    <svg class="menu-header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg>
+  </label>
+
+  <!-- overlay -->
+  <label for="menu-checkbox" class="menu-overlay"></label>
+
+  <!-- menu content -->
+  <div class="menu-drawer">
+    <div id="mySidenav" class="menu-mobile hidden-md hidden-lg open-idebar__menu">
+      <div class="box-login">
+        <div class="avatar">
+          <a href="#">
+            <img class="img__user" src="https://dl03.mediawz.com/wp-content/uploads/2023/03/dl03.png" alt="avatar">
+          </a>
+          <label for="menu-checkbox">
+            <svg id="close_nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="currentColor" d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM231 231C221.6 240.4 221.6 255.6 231 264.9L286 319.9L231 374.9C221.6 384.3 221.6 399.5 231 408.8C240.4 418.1 255.6 418.2 264.9 408.8L319.9 353.8L374.9 408.8C384.3 418.2 399.5 418.2 408.8 408.8C418.1 399.4 418.2 384.2 408.8 374.9L353.8 319.9L408.8 264.9C418.2 255.5 418.2 240.3 408.8 231C399.4 221.7 384.2 221.6 374.9 231L319.9 286L264.9 231C255.5 221.6 240.3 221.6 231 231z"/></svg>
+          </label>
+        </div>
+        <div class="action__link"></div>
+      </div>
+
+      <!-- menu -->
+      <div class="main-navbar">
+        <ul id="navbar__list--mobile"></ul>
+      </div>
+
+      <!-- hotline -->
+      <div class="menu-hotline">
+        <div class="hotline-item">
+          <div class="hotline-item__img">
+            <img src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/hotline.svg" alt="Hỗ trợ khách hàng" />
+          </div>
+          <div class="hotline-item__info">
+            <a href="tel:0987654321" title="Hotline" class="hotline-item__number">0987654321</a>
+            <span class="hotline-item__label">Hỗ trợ khách hàng</span>
+          </div>
+        </div>
+
+        <div class="hotline-item">
+          <div class="hotline-item__img">
+            <img src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/hotline.svg" alt="Hỗ trợ khách hàng" />
+          </div>
+          <div class="hotline-item__info">
+            <a href="tel:0123456789" title="Hotline" class="hotline-item__number">0123456789</a>
+            <span class="hotline-item__label">Hỗ trợ khách hàng</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
     <section class="slider">
       <div class="slider__wrapper">
         <div class="list-slider">
@@ -662,25 +711,25 @@
         </section>
       </section>
        <section class="tour2">
-        <section class="section__product">
+        <section class="section__product" data-tabs>
           <div class="main-container">
             <div class="tour-section__header">
               <h2 class="tour-section__title">TOUR TRONG NƯỚC</h2>
               <div class="title-line">
                 <div class="tl-1"></div>
                 <div class="tl-2"></div>
-                <div class="tl-3"></div>
+                <div class="tl-3"></div>  
               </div>
             </div>
             <div class="tab-head">
                <ul class="tabs-catproduct clearfix">
-                <li class="tab-link has-content current"><span>Miền Bắc</span></li>
-                <li class="tab-link has-content "><span>Miền Trung</span></li>
-                <li class="tab-link has-content "><span>Miền Nam</span></li>
+                <li class="tab-link has-content current" data-tab="mien-bac"><span>Miền Bắc</span></li>
+                <li class="tab-link has-content " data-tab="mien-trung"><span>Miền Trung</span></li>
+                <li class="tab-link has-content " data-tab="mien-nam"><span>Miền Nam</span></li>
               </ul>
             </div>
             <div class="tour-list">
-              <article class="tour-card">
+              <article class="tour-card" data-group="mien-bac">
                 <div class="img__item-product">
                   <span class="sale">-23%</span>
                   <a href="#">
@@ -692,9 +741,7 @@
                 </div>
                 <div class="info__item-product">
                   <h3 class="h3-title__item-product">
-                    <a href=""></a>
-                      Du lịch Châu Âu Pháp – Thụy Sỹ – Núi Jungfrau – Ý
-                    </a>
+                    <a href="">  Du lịch Châu Âu Pháp – Thụy Sỹ – Núi Jungfrau – Ý</a>
                   </h3>
                   <div class="price-vehicle__item-product">
                     <div class="fake-price">
@@ -761,7 +808,7 @@
                   </div>
                 </div>
               </article>
-              <article class="tour-card">
+              <article class="tour-card" data-group="mien-bac">
                 <div class="img__item-product">
                   <span class="sale">-16%</span>
                   <a href="#">
@@ -840,7 +887,7 @@
                   </div>
                 </div>
               </article>
-              <article class="tour-card">
+              <article class="tour-card" data-group="mien-bac">
                 <div class="img__item-product">
                   <span class="sale">-16%</span>
                   <a href="#">
@@ -922,7 +969,7 @@
                   </div>
                 </div>
               </article>
-              <!-- <article class="tour-card">
+              <article class="tour-card" data-group="mien-trung">
                 <div class="img__item-product">
                   <span class="sale">-23%</span>
                   <a href="#">
@@ -1004,7 +1051,7 @@
                   </div>
                 </div>
               </article>
-              <article class="tour-card">
+              <article class="tour-card"  data-group="mien-trung">
                 <div class="img__item-product">
                   <span class="sale">-23%</span>
                   <a href="#">
@@ -1085,7 +1132,7 @@
                   </div>
                 </div>
               </article>
-              <article class="tour-card">
+              <article class="tour-card"  data-group="mien-trung">
                 <div class="img__item-product">
                   <span class="sale">-16%</span>
                   <a href="#">
@@ -1164,13 +1211,256 @@
                     </ul>
                   </div>
                 </div>
-              </article> -->
+              </article>
+                          <article class="tour-card" data-group="mien-nam">
+                <div class="img__item-product">
+                  <span class="sale">-16%</span>
+                  <a href="#">
+                    <img
+                      src="	https://dl03.mediawz.com/wp-content/uploads/2022/12/sp5.jpg"
+                      alt="Du lịch Úc_SYDNEY_MELBOURNE"
+                    />
+                  </a>
+                </div>
+                <div class="info__item-product">
+                  <h3 class="h3-title__item-product">
+                    <a href=""> Du lịch Úc – SYDNEY – MELBOURNE </a>
+                  </h3>
+                  <div class="price-vehicle__item-product">
+                    <div class="fake-price">
+                      <ins>
+                        <bdi>5,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </ins>
+                      <del aria-hidden="true">
+                        <bdi>6,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </del>
+                    </div>
+                    <div class="vehicle">
+                      <ul class="vehicle-list">
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng ô tô"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_1.svg"
+                            alt="Di chuyển bằng ô tô"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng tàu thủy"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_2.svg"
+                            alt="Di chuyển bằng tàu thủy"
+                          />
+                        </li>
+                        <!-- <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng máy bay"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_3.svg"
+                            alt="Di chuyển bằng máy bay"
+                          />
+                        </li> -->
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-time__tour">
+                    <ul>
+                      <li>
+                        <img
+                          src="	https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_4.svg"
+                          alt="Khởi hành"
+                        />Khởi hành: Thứ 6 hằng tuần
+                      </li>
+                      <li>
+                        <img
+                          src="		https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_5.svg"
+                          alt="Thời gian"
+                        />Thời gian: 3 ngày 2 đêm
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="tour-card" data-group="mien-nam">
+                <div class="img__item-product">
+                  <span class="sale">-23%</span>
+                  <a href="#">
+                    <img
+                      src="	https://dl03.mediawz.com/wp-content/uploads/2022/12/sp3.jpg"
+                      alt="Du lịch Châu Âu – ĐỨC – LUXEMBOURG – BỈ –  PHÁP – HÀ LAN"
+                    />
+                  </a>
+                </div>
+                <div class="info__item-product">
+                  <h3 class="h3-title__item-product">
+                    <a href=""
+                      >
+                Du lịch Châu Âu – ĐỨC – LUXEMBOURG – BỈ –  PHÁP – HÀ LAN            </a
+                    >
+                  </h3>
+                  <div class="price-vehicle__item-product">
+                    <div class="fake-price">
+                      <ins>
+                        <bdi>9,780,000 <sup class="currency">&#8363;</sup></bdi>
+                      </ins>
+                      <del aria-hidden="true">
+                        <bdi>8,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </del>
+                    </div>
+                    <div class="vehicle">
+                      <ul class="vehicle-list">
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng ô tô"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_1.svg"
+                            alt="Di chuyển bằng ô tô"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng tàu thủy"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_2.svg"
+                            alt="Di chuyển bằng tàu thủy"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng máy bay"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_3.svg"
+                            alt="Di chuyển bằng máy bay"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-time__tour">
+                    <ul>
+                      <li>
+                        <img
+                          src="	https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_4.svg"
+                          alt="Khởi hành"
+                        />Khởi hành: Thứ 7 hằng tuần
+                      </li>
+                      <li>
+                        <img
+                          src="		https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_5.svg"
+                          alt="Thời gian"
+                        />Thời gian: 5 ngày 4 đêm
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Tour Miền Nam -->
+                <article class="tour-card"  data-group="mien-nam">
+                <div class="img__item-product">
+                  <span class="sale">-16%</span>
+                  <a href="#">
+                    <img
+                      src="	https://dl03.mediawz.com/wp-content/uploads/2022/12/sp1.jpg"
+                    />
+                  </a>
+                </div>
+                <div class="info__item-product">
+                  <h3 class="h3-title__item-product">
+                    <a href=""
+                      >DU LỊCH NHẬT – NAGOYA – LÀNG CỔ TÍCH SHIRAKAWAGO – TAKAYAMA – NAGANO – PHÚ SĨ – TOKYO</a
+                    >
+                  </h3>
+                  <div class="price-vehicle__item-product">
+                    <div class="fake-price">
+                      <ins>
+                        <bdi>5,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </ins>
+                      <del aria-hidden="true">
+                        <bdi>6,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </del>
+                    </div>
+                    <div class="vehicle">
+                      <ul class="vehicle-list">
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng ô tô"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_1.svg"
+                            alt="Di chuyển bằng ô tô"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng tàu thủy"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_2.svg"
+                            alt="Di chuyển bằng tàu thủy"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng máy bay"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_3.svg"
+                            alt="Di chuyển bằng máy bay"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-time__tour">
+                    <ul>
+                      <li>
+                        <img
+                          src="	https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_4.svg"
+                          alt="Khởi hành"
+                        />Khởi hành: Thứ 4 hằng tuần
+                      </li>
+                      <li>
+                        <img
+                          src="		https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_5.svg"
+                          alt="Thời gian"
+                        />Thời gian: 4 ngày 3 đêm
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
             </div>
           </div>
         </section>
       </section>
        <section class="tour3">
-        <section class="section__product">
+        <section class="section__product" data-tabs>
           <div class="main-container">
             <div class="tour-section__header">
               <h2 class="tour-section__title">TOUR NƯỚC NGOÀI</h2>
@@ -1182,14 +1472,14 @@
             </div>
             <div class="tab-head">
                <ul class="tabs-catproduct clearfix">
-                <li class="tab-link has-content current"><span>Du Lịch Châu Á</span></li>
-                <li class="tab-link has-content "><span>Du Lịch Châu Úc</span></li>
-                <li class="tab-link has-content "><span>Du Lịch Châu Mỹ</span></li>
-                <li class="tab-link has-content "><span>Du Lịch Châu Âu</span></li>
+                <li class="tab-link has-content current" data-tab="chau-a"><span>Du Lịch Châu Á</span></li>
+                <li class="tab-link has-content " data-tab="chau-uc"><span>Du Lịch Châu Úc</span></li>
+                <li class="tab-link has-content " data-tab="chau-my"><span>Du Lịch Châu Mỹ</span></li>
+                <li class="tab-link has-content " data-tab="chau-au"><span>Du Lịch Châu Âu</span></li>
               </ul>
             </div>
             <div class="tour-list">
-              <article class="tour-card">
+              <article class="tour-card" data-group="chau-a">
                 <div class="img__item-product">
                   <span class="sale">-23%</span>
                   <a href="#">
@@ -1270,7 +1560,7 @@
                   </div>
                 </div>
               </article>
-              <article class="tour-card">
+              <article class="tour-card" data-group="chau-a">
                 <div class="img__item-product">
                   <span class="sale">-16%</span>
                   <a href="#">
@@ -1349,7 +1639,7 @@
                   </div>
                 </div>
               </article>
-              <article class="tour-card">
+              <article class="tour-card" data-group="chau-a">
                 <div class="img__item-product">
                   <span class="sale">-16%</span>
                   <a href="#">
@@ -1431,7 +1721,7 @@
                   </div>
                 </div>
               </article>
-              <!-- <article class="tour-card">
+              <article class="tour-card" data-group="chau-a">
                 <div class="img__item-product">
                   <span class="sale">-23%</span>
                   <a href="#">
@@ -1513,7 +1803,7 @@
                   </div>
                 </div>
               </article>
-              <article class="tour-card">
+              <article class="tour-card" data-group="chau-uc">
                 <div class="img__item-product">
                   <span class="sale">-23%</span>
                   <a href="#">
@@ -1594,12 +1884,12 @@
                   </div>
                 </div>
               </article>
-              <article class="tour-card">
+              <article class="tour-card" data-group="chau-uc">
                 <div class="img__item-product">
                   <span class="sale">-16%</span>
                   <a href="#">
                     <img
-                      src="	https://dl03.mediawz.com/wp-content/uploads/2022/12/sp1.jpg"
+                      src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=480&h=320&q=80"
                     />
                   </a>
                 </div>
@@ -1673,7 +1963,967 @@
                     </ul>
                   </div>
                 </div>
-              </article> -->
+              </article>
+              <article class="tour-card" data-group="chau-uc">
+                <div class="img__item-product">
+                  <span class="sale">-16%</span>
+                  <a href="#">
+                    <img
+                      src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=480&h=320&q=80"
+                    />
+                  </a>
+                </div>
+                <div class="info__item-product">
+                  <h3 class="h3-title__item-product">
+                    <a href=""
+                      >DU LỊCH NHẬT – NAGOYA – LÀNG CỔ TÍCH SHIRAKAWAGO – TAKAYAMA – NAGANO – PHÚ SĨ – TOKYO</a
+                    >
+                  </h3>
+                  <div class="price-vehicle__item-product">
+                    <div class="fake-price">
+                      <ins>
+                        <bdi>5,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </ins>
+                      <del aria-hidden="true">
+                        <bdi>6,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </del>
+                    </div>
+                    <div class="vehicle">
+                      <ul class="vehicle-list">
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng ô tô"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_1.svg"
+                            alt="Di chuyển bằng ô tô"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng tàu thủy"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_2.svg"
+                            alt="Di chuyển bằng tàu thủy"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng máy bay"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_3.svg"
+                            alt="Di chuyển bằng máy bay"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-time__tour">
+                    <ul>
+                      <li>
+                        <img
+                          src="	https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_4.svg"
+                          alt="Khởi hành"
+                        />Khởi hành: Thứ 4 hằng tuần
+                      </li>
+                      <li>
+                        <img
+                          src="		https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_5.svg"
+                          alt="Thời gian"
+                        />Thời gian: 4 ngày 3 đêm
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="tour-card" data-group="chau-uc">
+                <div class="img__item-product">
+                  <span class="sale">-16%</span>
+                  <a href="#">
+                    <img
+                      src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=480&h=320&q=80"
+                    />
+                  </a>
+                </div>
+                <div class="info__item-product">
+                  <h3 class="h3-title__item-product">
+                    <a href=""
+                      >DU LỊCH NHẬT – NAGOYA – LÀNG CỔ TÍCH SHIRAKAWAGO – TAKAYAMA – NAGANO – PHÚ SĨ – TOKYO</a
+                    >
+                  </h3>
+                  <div class="price-vehicle__item-product">
+                    <div class="fake-price">
+                      <ins>
+                        <bdi>5,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </ins>
+                      <del aria-hidden="true">
+                        <bdi>6,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </del>
+                    </div>
+                    <div class="vehicle">
+                      <ul class="vehicle-list">
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng ô tô"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_1.svg"
+                            alt="Di chuyển bằng ô tô"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng tàu thủy"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_2.svg"
+                            alt="Di chuyển bằng tàu thủy"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng máy bay"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_3.svg"
+                            alt="Di chuyển bằng máy bay"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-time__tour">
+                    <ul>
+                      <li>
+                        <img
+                          src="	https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_4.svg"
+                          alt="Khởi hành"
+                        />Khởi hành: Thứ 4 hằng tuần
+                      </li>
+                      <li>
+                        <img
+                          src="		https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_5.svg"
+                          alt="Thời gian"
+                        />Thời gian: 4 ngày 3 đêm
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="tour-card" data-group="chau-my">
+                <div class="img__item-product">
+                  <span class="sale">-16%</span>
+                  <a href="#">
+                    <img
+                      src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=480&h=320&q=80"
+                    />
+                  </a>
+                </div>
+                <div class="info__item-product">
+                  <h3 class="h3-title__item-product">
+                    <a href=""
+                      >DU LỊCH NHẬT – NAGOYA – LÀNG CỔ TÍCH SHIRAKAWAGO – TAKAYAMA – NAGANO – PHÚ SĨ – TOKYO</a
+                    >
+                  </h3>
+                  <div class="price-vehicle__item-product">
+                    <div class="fake-price">
+                      <ins>
+                        <bdi>5,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </ins>
+                      <del aria-hidden="true">
+                        <bdi>6,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </del>
+                    </div>
+                    <div class="vehicle">
+                      <ul class="vehicle-list">
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng ô tô"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_1.svg"
+                            alt="Di chuyển bằng ô tô"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng tàu thủy"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_2.svg"
+                            alt="Di chuyển bằng tàu thủy"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng máy bay"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_3.svg"
+                            alt="Di chuyển bằng máy bay"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-time__tour">
+                    <ul>
+                      <li>
+                        <img
+                          src="	https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_4.svg"
+                          alt="Khởi hành"
+                        />Khởi hành: Thứ 4 hằng tuần
+                      </li>
+                      <li>
+                        <img
+                          src="		https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_5.svg"
+                          alt="Thời gian"
+                        />Thời gian: 4 ngày 3 đêm
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="tour-card" data-group="chau-my">
+                <div class="img__item-product">
+                  <span class="sale">-16%</span>
+                  <a href="#">
+                    <img
+                      src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=480&h=320&q=80"
+                    />
+                  </a>
+                </div>
+                <div class="info__item-product">
+                  <h3 class="h3-title__item-product">
+                    <a href=""
+                      >DU LỊCH NHẬT – NAGOYA – LÀNG CỔ TÍCH SHIRAKAWAGO – TAKAYAMA – NAGANO – PHÚ SĨ – TOKYO</a
+                    >
+                  </h3>
+                  <div class="price-vehicle__item-product">
+                    <div class="fake-price">
+                      <ins>
+                        <bdi>5,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </ins>
+                      <del aria-hidden="true">
+                        <bdi>6,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </del>
+                    </div>
+                    <div class="vehicle">
+                      <ul class="vehicle-list">
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng ô tô"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_1.svg"
+                            alt="Di chuyển bằng ô tô"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng tàu thủy"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_2.svg"
+                            alt="Di chuyển bằng tàu thủy"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng máy bay"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_3.svg"
+                            alt="Di chuyển bằng máy bay"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-time__tour">
+                    <ul>
+                      <li>
+                        <img
+                          src="	https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_4.svg"
+                          alt="Khởi hành"
+                        />Khởi hành: Thứ 4 hằng tuần
+                      </li>
+                      <li>
+                        <img
+                          src="		https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_5.svg"
+                          alt="Thời gian"
+                        />Thời gian: 4 ngày 3 đêm
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="tour-card" data-group="chau-my">
+                <div class="img__item-product">
+                  <span class="sale">-16%</span>
+                  <a href="#">
+                    <img
+                      src="https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?auto=format&fit=crop&w=480&h=320&q=80"
+                    />
+                  </a>
+                </div>
+                <div class="info__item-product">
+                  <h3 class="h3-title__item-product">
+                    <a href=""
+                      >DU LỊCH NHẬT – NAGOYA – LÀNG CỔ TÍCH SHIRAKAWAGO – TAKAYAMA – NAGANO – PHÚ SĨ – TOKYO</a
+                    >
+                  </h3>
+                  <div class="price-vehicle__item-product">
+                    <div class="fake-price">
+                      <ins>
+                        <bdi>5,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </ins>
+                      <del aria-hidden="true">
+                        <bdi>6,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </del>
+                    </div>
+                    <div class="vehicle">
+                      <ul class="vehicle-list">
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng ô tô"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_1.svg"
+                            alt="Di chuyển bằng ô tô"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng tàu thủy"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_2.svg"
+                            alt="Di chuyển bằng tàu thủy"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng máy bay"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_3.svg"
+                            alt="Di chuyển bằng máy bay"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-time__tour">
+                    <ul>
+                      <li>
+                        <img
+                          src="	https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_4.svg"
+                          alt="Khởi hành"
+                        />Khởi hành: Thứ 4 hằng tuần
+                      </li>
+                      <li>
+                        <img
+                          src="		https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_5.svg"
+                          alt="Thời gian"
+                        />Thời gian: 4 ngày 3 đêm
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="tour-card" data-group="chau-my">
+                <div class="img__item-product">
+                  <span class="sale">-16%</span>
+                  <a href="#">
+                    <img
+                      src="	https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=480&h=320&q=80"
+                    />
+                  </a>
+                </div>
+                <div class="info__item-product">
+                  <h3 class="h3-title__item-product">
+                    <a href=""
+                      >DU LỊCH NHẬT – NAGOYA – LÀNG CỔ TÍCH SHIRAKAWAGO – TAKAYAMA – NAGANO – PHÚ SĨ – TOKYO</a
+                    >
+                  </h3>
+                  <div class="price-vehicle__item-product">
+                    <div class="fake-price">
+                      <ins>
+                        <bdi>5,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </ins>
+                      <del aria-hidden="true">
+                        <bdi>6,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </del>
+                    </div>
+                    <div class="vehicle">
+                      <ul class="vehicle-list">
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng ô tô"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_1.svg"
+                            alt="Di chuyển bằng ô tô"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng tàu thủy"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_2.svg"
+                            alt="Di chuyển bằng tàu thủy"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng máy bay"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_3.svg"
+                            alt="Di chuyển bằng máy bay"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-time__tour">
+                    <ul>
+                      <li>
+                        <img
+                          src="	https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_4.svg"
+                          alt="Khởi hành"
+                        />Khởi hành: Thứ 4 hằng tuần
+                      </li>
+                      <li>
+                        <img
+                          src="		https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_5.svg"
+                          alt="Thời gian"
+                        />Thời gian: 4 ngày 3 đêm
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="tour-card" data-group="chau-my">
+                <div class="img__item-product">
+                  <span class="sale">-16%</span>
+                  <a href="#">
+                    <img
+                      src="	https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=480&h=320&q=80"
+                    />
+                  </a>
+                </div>
+                <div class="info__item-product">
+                  <h3 class="h3-title__item-product">
+                    <a href=""
+                      >DU LỊCH NHẬT – NAGOYA – LÀNG CỔ TÍCH SHIRAKAWAGO – TAKAYAMA – NAGANO – PHÚ SĨ – TOKYO</a
+                    >
+                  </h3>
+                  <div class="price-vehicle__item-product">
+                    <div class="fake-price">
+                      <ins>
+                        <bdi>5,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </ins>
+                      <del aria-hidden="true">
+                        <bdi>6,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </del>
+                    </div>
+                    <div class="vehicle">
+                      <ul class="vehicle-list">
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng ô tô"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_1.svg"
+                            alt="Di chuyển bằng ô tô"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng tàu thủy"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_2.svg"
+                            alt="Di chuyển bằng tàu thủy"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng máy bay"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_3.svg"
+                            alt="Di chuyển bằng máy bay"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-time__tour">
+                    <ul>
+                      <li>
+                        <img
+                          src="	https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_4.svg"
+                          alt="Khởi hành"
+                        />Khởi hành: Thứ 4 hằng tuần
+                      </li>
+                      <li>
+                        <img
+                          src="		https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_5.svg"
+                          alt="Thời gian"
+                        />Thời gian: 4 ngày 3 đêm
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="tour-card" data-group="chau-au">
+                <div class="img__item-product">
+                  <span class="sale">-16%</span>
+                  <a href="#">
+                    <img
+                      src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=480&h=320&q=80"
+                    />
+                  </a>
+                </div>
+                <div class="info__item-product">
+                  <h3 class="h3-title__item-product">
+                    <a href=""
+                      >DU LỊCH NHẬT – NAGOYA – LÀNG CỔ TÍCH SHIRAKAWAGO – TAKAYAMA – NAGANO – PHÚ SĨ – TOKYO</a
+                    >
+                  </h3>
+                  <div class="price-vehicle__item-product">
+                    <div class="fake-price">
+                      <ins>
+                        <bdi>5,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </ins>
+                      <del aria-hidden="true">
+                        <bdi>6,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </del>
+                    </div>
+                    <div class="vehicle">
+                      <ul class="vehicle-list">
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng ô tô"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_1.svg"
+                            alt="Di chuyển bằng ô tô"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng tàu thủy"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_2.svg"
+                            alt="Di chuyển bằng tàu thủy"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng máy bay"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_3.svg"
+                            alt="Di chuyển bằng máy bay"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-time__tour">
+                    <ul>
+                      <li>
+                        <img
+                          src="	https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_4.svg"
+                          alt="Khởi hành"
+                        />Khởi hành: Thứ 4 hằng tuần
+                      </li>
+                      <li>
+                        <img
+                          src="		https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_5.svg"
+                          alt="Thời gian"
+                        />Thời gian: 4 ngày 3 đêm
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="tour-card" data-group="chau-au">
+                <div class="img__item-product">
+                  <span class="sale">-16%</span>
+                  <a href="#">
+                    <img
+                      src="	https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=480&h=320&q=80"
+                    />
+                  </a>
+                </div>
+                <div class="info__item-product">
+                  <h3 class="h3-title__item-product">
+                    <a href=""
+                      >DU LỊCH NHẬT – NAGOYA – LÀNG CỔ TÍCH SHIRAKAWAGO – TAKAYAMA – NAGANO – PHÚ SĨ – TOKYO</a
+                    >
+                  </h3>
+                  <div class="price-vehicle__item-product">
+                    <div class="fake-price">
+                      <ins>
+                        <bdi>5,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </ins>
+                      <del aria-hidden="true">
+                        <bdi>6,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </del>
+                    </div>
+                    <div class="vehicle">
+                      <ul class="vehicle-list">
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng ô tô"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_1.svg"
+                            alt="Di chuyển bằng ô tô"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng tàu thủy"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_2.svg"
+                            alt="Di chuyển bằng tàu thủy"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng máy bay"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_3.svg"
+                            alt="Di chuyển bằng máy bay"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-time__tour">
+                    <ul>
+                      <li>
+                        <img
+                          src="	https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_4.svg"
+                          alt="Khởi hành"
+                        />Khởi hành: Thứ 4 hằng tuần
+                      </li>
+                      <li>
+                        <img
+                          src="		https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_5.svg"
+                          alt="Thời gian"
+                        />Thời gian: 4 ngày 3 đêm
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="tour-card" data-group="chau-au">
+                <div class="img__item-product">
+                  <span class="sale">-16%</span>
+                  <a href="#">
+                    <img
+                      src="	https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=480&h=320&q=80"
+                    />
+                  </a>
+                </div>
+                <div class="info__item-product">
+                  <h3 class="h3-title__item-product">
+                    <a href=""
+                      >DU LỊCH NHẬT – NAGOYA – LÀNG CỔ TÍCH SHIRAKAWAGO – TAKAYAMA – NAGANO – PHÚ SĨ – TOKYO</a
+                    >
+                  </h3>
+                  <div class="price-vehicle__item-product">
+                    <div class="fake-price">
+                      <ins>
+                        <bdi>5,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </ins>
+                      <del aria-hidden="true">
+                        <bdi>6,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </del>
+                    </div>
+                    <div class="vehicle">
+                      <ul class="vehicle-list">
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng ô tô"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_1.svg"
+                            alt="Di chuyển bằng ô tô"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng tàu thủy"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_2.svg"
+                            alt="Di chuyển bằng tàu thủy"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng máy bay"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_3.svg"
+                            alt="Di chuyển bằng máy bay"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-time__tour">
+                    <ul>
+                      <li>
+                        <img
+                          src="	https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_4.svg"
+                          alt="Khởi hành"
+                        />Khởi hành: Thứ 4 hằng tuần
+                      </li>
+                      <li>
+                        <img
+                          src="		https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_5.svg"
+                          alt="Thời gian"
+                        />Thời gian: 4 ngày 3 đêm
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="tour-card" data-group="chau-au">
+                <div class="img__item-product">
+                  <span class="sale">-16%</span>
+                  <a href="#">
+                    <img
+                      src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=480&h=320&q=80"
+                    />
+                  </a>
+                </div>
+                <div class="info__item-product">
+                  <h3 class="h3-title__item-product">
+                    <a href=""
+                      >DU LỊCH NHẬT – NAGOYA – LÀNG CỔ TÍCH SHIRAKAWAGO – TAKAYAMA – NAGANO – PHÚ SĨ – TOKYO</a
+                    >
+                  </h3>
+                  <div class="price-vehicle__item-product">
+                    <div class="fake-price">
+                      <ins>
+                        <bdi>5,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </ins>
+                      <del aria-hidden="true">
+                        <bdi>6,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </del>
+                    </div>
+                    <div class="vehicle">
+                      <ul class="vehicle-list">
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng ô tô"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_1.svg"
+                            alt="Di chuyển bằng ô tô"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng tàu thủy"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_2.svg"
+                            alt="Di chuyển bằng tàu thủy"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng máy bay"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_3.svg"
+                            alt="Di chuyển bằng máy bay"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-time__tour">
+                    <ul>
+                      <li>
+                        <img
+                          src="	https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_4.svg"
+                          alt="Khởi hành"
+                        />Khởi hành: Thứ 4 hằng tuần
+                      </li>
+                      <li>
+                        <img
+                          src="		https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_5.svg"
+                          alt="Thời gian"
+                        />Thời gian: 4 ngày 3 đêm
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="tour-card" data-group="chau-au">
+                <div class="img__item-product">
+                  <span class="sale">-16%</span>
+                  <a href="#">
+                    <img
+                      src="	https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=480&h=320&q=80"
+                    />
+                  </a>
+                </div>
+                <div class="info__item-product">
+                  <h3 class="h3-title__item-product">
+                    <a href=""
+                      >DU LỊCH NHẬT – NAGOYA – LÀNG CỔ TÍCH SHIRAKAWAGO – TAKAYAMA – NAGANO – PHÚ SĨ – TOKYO</a
+                    >
+                  </h3>
+                  <div class="price-vehicle__item-product">
+                    <div class="fake-price">
+                      <ins>
+                        <bdi>5,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </ins>
+                      <del aria-hidden="true">
+                        <bdi>6,437,000 <sup class="currency">&#8363;</sup></bdi>
+                      </del>
+                    </div>
+                    <div class="vehicle">
+                      <ul class="vehicle-list">
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng ô tô"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_1.svg"
+                            alt="Di chuyển bằng ô tô"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng tàu thủy"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_2.svg"
+                            alt="Di chuyển bằng tàu thủy"
+                          />
+                        </li>
+                        <li
+                          class="tool-tip"
+                          data-placement="top"
+                          title
+                          data-original-title="Di chuyển bằng máy bay"
+                        >
+                          <img
+                            src="https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_3.svg"
+                            alt="Di chuyển bằng máy bay"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info-time__tour">
+                    <ul>
+                      <li>
+                        <img
+                          src="	https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_4.svg"
+                          alt="Khởi hành"
+                        />Khởi hành: Thứ 4 hằng tuần
+                      </li>
+                      <li>
+                        <img
+                          src="		https://dl03.mediawz.com/wp-content/themes/halink.DL03/vimgsrc/tag_icon_5.svg"
+                          alt="Thời gian"
+                        />Thời gian: 4 ngày 3 đêm
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
             </div>
           </div>
         </section>
@@ -1767,6 +3017,11 @@
   </div>
 
 </footer>
+    <!-- Nút Back to Top -->
+<button id="backToTopBtn" class="back-to-top" aria-label="Lên đầu trang">
+  &#8679; <!-- Ký tự mũi tên chỉ lên (hoặc dùng icon SVG bên dưới) -->
+</button>
     <script src="javascript/main.js"></script>
+
   </body>
 </html>

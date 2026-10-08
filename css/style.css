@@ -280,7 +280,7 @@
   color: #212529;
   font-size: 16px;
   text-align: center;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   margin-top: 10px;
 }
 
@@ -288,9 +288,9 @@
   margin-top: 10px;
   padding: 0;
   margin-bottom: 5px;
-  line-height: 1.15;
+  line-height: 1.3;
   color: #222;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   /* height: 40px; */
   max-height: 2.6em;
@@ -299,7 +299,8 @@
   -webkit-box-orient: vertical;
   display: -webkit-box;
   text-overflow: ellipsis;
-  min-height: 35px;
+  height: 2.6em;
+  /* min-height: 35px; */
 }
 
 .h3-title__item-product a {
@@ -383,31 +384,34 @@
   text-decoration: inherit; */
   flex: 1;
   display: flex;
-  flex-direction: column; /* Đẩy giá cũ xuống dưới giá mới */
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
   font-size: 18px;
   color: #ff0000;
   line-height: 1.1;
   font-weight: 500;
-  min-height: 35px;
+  /* min-height: 35px; */
+  gap: 3px 8px;
 }
 
 .price-vehicle__item-product .fake-price del {
   display: block;
-  width: 100%;
+  width: auto;
   color: #888;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   order: 2;
 }
 
 .price-vehicle__item-product .fake-price ins {
   display: block;
-  width: 100%;
+  width: auto;
   font-size: 18px;
   color: #e21b1b;
   line-height: 1.1;
   font-weight: 500;
-  text-decoration: inherit;
+  text-decoration: none;
   order: 1;
 }
 
@@ -472,7 +476,7 @@
 
 /* ========================================================================== */
 .tour-list {
-  margin-top: 30px;
+  margin-top: 15px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px 20px;
@@ -484,12 +488,13 @@
 }
 .tab-head .tabs-catproduct {
   padding: 0;
-  margin-top: 40px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   list-style: none outside;
+  /* margin: 0; */
 }
 
 .tab-head .tabs-catproduct li {
@@ -725,4 +730,51 @@ a.link__boxleft_swth {
 .footer-widgets {
   position: relative;
   z-index: 2;
+}
+
+/* ======================= Back To Top ======================== */
+/* Nút Back to Top */
+.back-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-one);
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 990;
+
+  /* Mặc định ẩn khi ở đầu trang */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hiện nút khi kéo xuống qua ngưỡng */
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background-color: var(--color-one);
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* Con trỏ tay khi rê chuột vào tab */
+.tabs-catproduct .tab-link {
+  cursor: pointer;
 }
